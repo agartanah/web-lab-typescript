@@ -1,0 +1,13 @@
+@import "../../colors/colors";
+@import "../../mixins/button-mixin";
+
+.pin-button {
+    @include button-size(32px, 32px);
+    @include button-border-style(5px, 2px, $orange-dark);
+    background: url('/src/images/pin-button.svg') center no-repeat;
+    @include button-bg-color($main-background-color, $hover-color);
+}
+
+.pin-unlock-button {
+    background: url('/src/images/pin-unlock-button.svg') center no-repeat;
+}
