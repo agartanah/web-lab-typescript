@@ -49,7 +49,7 @@ export default function EditModal() {
 
         setIsError(false);
         
-        dispatch(setListTasks(setTaskToLocalStorage(currTask.id, titleValue, descriptionValue)));
+        dispatch(setListTasks(setTaskToLocalStorage(currTask.id, titleValue, descriptionValue, currTask.isPin)));
     
         editModal.current?.close();
 

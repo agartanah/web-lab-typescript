@@ -252,7 +252,7 @@ export default function Task({
                         onClick={(event) => {
                             event.stopPropagation();
 
-                            dispatch(setCurrTask({ id: id, title: title, description: description, isPin }));
+                            dispatch(setCurrTask({ id: id, title: title, description: description, isPin: isPin }));
                             dispatch(setCurrOperation("edit"));
                         }}
                     ></button>
