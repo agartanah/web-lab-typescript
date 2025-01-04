@@ -5,12 +5,6 @@ export interface TaskType {
     isPin: boolean;
 }
 
-export interface TaskElementType {
-    id: number;
-    title: HTMLParagraphElement;
-    description: HTMLParagraphElement;
-}
-
 export interface TasksState {
     openTask: number;
     currTask: TaskType | null;
